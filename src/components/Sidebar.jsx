@@ -24,7 +24,7 @@ const Sidebar = () => {
             if (!token) return console.error("No token found in localStorage!");
     
             try {
-                const { data } = await axios.get("http://localhost:3000/history", {
+                const { data } = await axios.get("https://gimini-backend-1.onrender.com/history", {
                     headers: { Authorization: `Bearer ${token}` },
                 });
     
