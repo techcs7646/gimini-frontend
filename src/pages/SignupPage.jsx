@@ -16,7 +16,7 @@ const SignupPage = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3000/signup", {
+      const response = await axios.post("https://gimini-backend-1.onrender.com/signup", {
         name: userDetails.fullName,
         email: userDetails.email,
         password: userDetails.password,
