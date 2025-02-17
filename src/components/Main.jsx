@@ -19,7 +19,7 @@ const Main = () => {
 
         try {
             const res = await axios.post(
-                "http://localhost:3000/store",
+                "https://gimini-backend-1.onrender.com/store",
                 { userMessage: message, aiResponse: response },
                 {
                     headers: { Authorization: `Bearer ${token}` }, // Include JWT token
